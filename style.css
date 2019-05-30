@@ -1,0 +1,117 @@
+body {
+  font-family: "Roboto", "Open sans-serif";
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #605f5f;
+}
+
+.flex {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+button{
+  padding: 10px 20px;
+  background-color: #2196F3;
+  color : #fff;
+  border: 0;
+  margin : 0;
+  cursor: pointer;
+  transition : .3s ease-in-out;
+  text-align: start;
+  font-family: monospace;
+}
+
+.checkBtn{
+  background-color: #00BCD4;
+
+  bottom: 8px;
+  font-family: monospace;
+  right : 5px;
+  border-radius: 5px;
+}
+
+.checkBtn:hover{
+  background-color: rgb(3, 152, 172);
+}
+
+button.active{
+  background: linear-gradient(to right, #03A9F4, #00BCD4);
+}
+
+.result {
+  bottom : 10px;
+  position: absolute;
+  transition: .3s ease-in-out;
+}
+
+button:hover{
+  background-color : #187fd0;
+  color: #fff;
+}
+
+header{
+  flex-direction: column;
+  padding: 5px 10px;
+}
+nav{
+  flex-direction: column;
+}
+article{
+  padding: 20px;
+  width: 100%;
+  padding-right: 0px;
+  max-width: 250px;
+}
+.form-field{
+  background : #aaaaaa7a;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border : 0;
+  font-size: 15px;
+  outline-color: #2196f3;
+}
+.body-content{
+  align-items: start;
+  background-color: #e2e2e2;
+  border-radius: 10px;
+  box-shadow: 0px 1px 27px -2px #716f6fab;
+  overflow: hidden;
+  position: relative;
+}
+
+.boxWrapper {
+  flex-direction: column;
+  box-shadow: 0px 0px 20px -2px #9E9E9E;
+  border-radius: 10px;
+  margin-top: 50px;
+  width : 100%;
+  max-width: 500px;
+}
+.result{
+  margin-top: 20px;
+}
+
+.box-title{
+  color: #414242;
+  font-weight: 600;
+}
+
+.footer-text{
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  left :0;
+  right :0;
+  text-align: center;
+  color : #aaaaaa7a;
+  padding: 20px 0px;
+}

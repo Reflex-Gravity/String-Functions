@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>String Functions | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex" onload="initialLoad()">
+  
+  <div class="boxWrapper flex">
+    <header class="flex">
+      <span class="box-title">String Functions App</span>
+    </header>
+    
+    <aside class="body-content flex">
+      <nav class="flex">
+        <button class="button length" onclick="setType(event, 'length')">Length</button>
+        <button class="button search" onclick="setType(event, 'search')">Search</button>
+        <button class="button replace" onclick="setType(event, 'replace')">Replace</button>
+        <button class="button uppercase" onclick="setType(event, 'uppercase')">Convert to Uppercase</button>
+        <button class="button lowercase" onclick="setType(event, 'lowercase')">Convert to Lowercase</button>
+        <button class="button concat" onclick="setType(event, 'concat')">Concat strings</button>
+        <button class="button extract" onclick="setType(event, 'extract')">Extract Text</button>
+        <button class="button charAt" onclick="setType(event, 'charAt')">Find character index</button>
+      </nav>
+      <article>
+        
+      <div id="playground">
+        <input name="inputField" class="form-field" id="inputField" placeholder="Enter text here"/>
+      </div>
+
+      <div class="result">
+        <span>Result:</span>
+        <span id="resultTxt"></span>
+      </div>
+      <button class="checkBtn" onclick="checkResult()">Check</button>
+      </article>
+    </aside>
+  </div>
+  <footer>
+    <span class="footer-text">Designed and Developed by Rhea</span>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
